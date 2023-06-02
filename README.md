@@ -6,6 +6,8 @@ Contact: [Chloe Eggleston](https://chloes.computer/), Tessa Masis (tmasis@cs.uma
 
 This software was used to filter an archive of Gardenhose messages to create the "Twitter4Years" dataset described as follows.
 
+See also: https://github.com/slanglab/aae-twitter
+
 # Description
 
 The Twitter4Years dataset is a corpus of approximately 227M tweets authored from May 2011 through April 2015 that are geolocated with latitude/longitude coordinates in the U.S., and with various metadata filters to help focus on ``everyday'' people (attempting to exclude, for example, celebrities and automated accounts). Messages’ locations have also been augmented with geographical shapefile lookups to TIGER/Line blockgroups distributed by the U.S. Census, and thus integrable with demographic information from Census data products at any level of its geographical hierarchy (blockgroups, tracts, counties, etc).
