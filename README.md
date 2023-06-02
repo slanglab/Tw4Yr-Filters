@@ -29,3 +29,29 @@ We now discuss the filtering and analysis to create Twitter4Years, which was per
 
 This results in 227,253,198 messages (including duplicates); 226,631,796 deduplicated messages; and 7,414,332 unique authors.
 
+
+# Usage
+
+The pipeline is run in this order.  These notes describe data file locations on our internal server during development.
+
+```
+Filter 1: Geographical coordinates
+	Script: geo.sh (originally at /home/ceggleston/geo.sh)
+	Source Directory: /data/tweets/all
+	Output Directory: /home/ceggleston/extracted
+
+Filter 2: USA Located
+	Script: usaify.py (originally at /home/ceggleston/usaify/usaify.py)
+	Source Directory: /home/ceggleston/extracted
+	Output Directory: /home/ceggleston/usa_extracted
+
+Filter 3: Source Whitelist + RT/Follow/Mention + Followers Count + Hashtags Count
+	Script: filters.py (originally at /home/ceggleston/samples/filters.py)
+	Source Directory: /home/ceggleston/usa_extracted
+	Output Directory: /home/ceggleston/dataset/tweets
+
+Script 4: Attaching GEOIDs to each tweet for use in ACS data
+	Script: gen_geoids.py (originally at /home/ceggleston/dataset/gen_geoids.py)
+	Source Directory: /home/ceggleston/dataset/tweets
+	Output Directory: /home/ceggleston/dataset/geoids
+```
