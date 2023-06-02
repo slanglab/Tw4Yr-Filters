@@ -22,7 +22,7 @@ We now discuss the filtering and analysis to create Twitter4Years, which was per
 
 - Geotagged using latitude/longitude coordinates (often called “GPS coordinates”).
 - Author had less than 5,000 followers when the tweet was authored.
-- Message is not a retweet and its text does not contain any of the following words (case insensitive matching): ``rt'', ``follow'', ``mention''.
+- Message is not a retweet and its text does not contain any of the following words (case insensitive matching): `rt`, `follow`, `mention`.
 - Message text has less than three hashtags.
 - Message was authored from May 2011 through April 2015, a 48 month period.  We chose a multiple of 12 months as the duration in order to eliminate anomalous effects from annually occurring holidays or other cultural events. The specific range was chosen as one with a high prevalence of geotagged tweets within the initial archive. Outside this time range, users less frequently posted their location (perhaps due to software and user interface changes).
 - The tweet’s authoring platform (Twitter client, the \emph{source} field in the API's tweet object) was limited to one of approximately two dozen typically used by everyday people, as opposed to automated marketing and other uses that sometimes publish to a particular location. The list was manually selected by examining the 125 most frequent authoring platforms, which make up approximately 99\% of the dataset. Our whitelist includes, for example, popular clients from the time that were used to access Twitter from the Web, iPhone, Blackberry, and Android, and excludes cross-posts from other social media platforms like Instagram and FourSquare, as well as social media hiring platforms like CareerArc.
