@@ -29,6 +29,54 @@ We now discuss the filtering and analysis to create Twitter4Years, which was per
 
 This results in 227,253,198 messages (including duplicates); 226,631,796 deduplicated messages; and 7,414,332 unique authors.
 
+# Whitelist description
+The following describes the whitelist, with descriptions of each platform and the corresponding whitelist line number(s) in parentheses:
+1. Official Client/Browser (1-15)
+    - The official Twitter client, devices include iPhone, Android, Blackberry, Windows Phone, Nokia n40, Windows, iPad, Android Tablets, and Browsers 
+2. TweetCaster (16,21,27)
+    - A third party Twitter client. [Website Archive](https://web.archive.org/web/20140221205743/https://tweetcaster.com/) [Google Play Store Archive](https://web.archive.org/web/20150314023306/https://play.google.com/store/apps/details?id=com.handmark.tweetcaster)
+3. UberSocial (17,24,25,34,44,55)
+    - A third party Twitter client. Includes versions for Blackberry, iOS, Android, as well as stand-alone skins for various media platforms (Sherlock Holmes, Tower Heist). [Website Archive](https://web.archive.org/web/20180201210152/https://www.ubersocial.com/)
+4. Tweetbot (18,20,36,39)
+    - A third party Twitter client. [Wikipedia](https://en.wikipedia.org/wiki/Tweetbot)
+5. TweetDeck (19)
+    - A third party Twitter client. Acquired by Twitter in 2011. [Wikipedia](https://en.wikipedia.org/wiki/TweetDeck)
+6. NightfoxDuo (22,53)
+    - A Japanese game that uses Twitter for a free-form social networking component. [Description](https://www.semanticscholar.org/paper/Detecting-Location-Spoofing-in-Social-Media%3A-of-an-Zhao/f9e30dbaec03da02d7610a6d063244bc664022ea/figure/1)
+7. Echofon (23,50)
+    - A third party Twitter client. [Website Archive](https://web.archive.org/web/20220302165541/https://echofon.com/)
+8. Plume (26,30,37)
+    - A third party Twitter client. [Website Archive](https://web.archive.org/web/20220307165409/https://myplume.com/)
+9. Endomondo[^1] (28)
+    - A fitness platform that allows users to update their exercise status to Twitter. [Wikipedia](https://en.wikipedia.org/wiki/Endomondo)
+10. UberTwitter (29,35)
+    - Former version of UberSocial before rebranding. [Rebranding coverage](https://www.networkworld.com/article/2200143/twitter-whacks-ubertwitter-company-so-hard-it-s-changing-app-s-name-to-ubersocial.html), [additional coverage](https://everything-pr.com/uber-twitter/)
+11. Gravity (31,38)
+    - A third party Twitter client. [Website Archive](https://web.archive.org/web/20220522043832/http://mobileways.de/products/gravity/gravity/)
+12. Tweetlogix (32)
+    - A third party Twitter client. [Website Archive](https://web.archive.org/web/20220310000104/https://onloft.com/tweetlogix)
+13. Hootsuite (33,46)
+    - A social media management platform that allows for managing socia media accounts across platforms. [Wikipedia](https://en.wikipedia.org/wiki/Hootsuite)
+14. Twittelator (40)
+    - A third party Twitter client. [Website Archive](https://web.archive.org/web/20220308150101/https://stone.com/Twittelator/)
+15. Twitbird (41,52)
+    - A third party Twitter client. [News Coverage](https://www.americanexpress.com/en-us/business/trends-and-insights/articles/twitbird-a-twitter-client-for-the-best-of-us-1/), [additional coverage](https://methodshop.com/twitbird-pro/)
+16. Twidroyd (42,43)
+    - A third party Twitter client, eventually acquired by UberMedia and rebranded as UberSocial for Android. [Website Archive](https://web.archive.org/web/20220409053038/https://twidroid.com/)
+17. A.plus (45)
+    - A third party Twitter client for Desktop, eventually integrated into UberSocial as a theme. [Website Archive](https://web.archive.org/web/20110902011658/http://www.aplus-app.com:80/).
+18. Seesmic (47)
+    - A social media management platform, acquired by HootSuite in 2012. [Wikipedia](https://en.wikipedia.org/wiki/Seesmic)
+19. twicca (48)
+    - A third party Twitter client. [Play Store Archive](https://web.archive.org/web/20220208151759/https://play.google.com/store/apps/details?id=jp.r246.twicca&hl=en_US&gl=US)
+20. Fenix (49)
+    - A third party Twitter client. [Website Archive](https://web.archive.org/web/20220312112445/https://mvilla.it/fenix)
+21. Tweetie (51)
+    - A third party Twitter client. Acquired by Twitter in 2010. [Wikipedia](https://en.wikipedia.org/wiki/Tweetie)
+22. Tweedle (54)
+    - A third party Twitter client. [News Coverage](https://lifehacker.com/tweedle-makes-twitter-simple-stable-and-beautiful-for-1477800832)
+​
+[^1]: Under late review, does not strictly fit criteria for entry. Analysis should not be significantly affected, as it makes up only 0.008% of the dataset.
 
 # Usage
 
