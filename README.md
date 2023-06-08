@@ -1,12 +1,13 @@
 # Tw4Years-Filters
 
-Code to accompany: Masis, Eggleston, Green, Jones, Armstrong, and O'Connor. "Large-scale Twitter data reveals systematic geographic and social variation in African American English." Currently under peer-review.
+Code to accompany: Masis, Eggleston, Green, Jones, Armstrong, and O'Connor. "Large-scale Twitter data reveals systematic geographic and social variation in African American English." Currently under peer-review. 2023.
 
 Contact: [Chloe Eggleston](https://chloes.computer/), Tessa Masis (tmasis@cs.umass.edu), Brendan O'Connor (brenocon@cs.umass.edu)
 
 This software was used to filter an archive of Gardenhose messages to create the "Twitter4Years" dataset described as follows.
 
 See also: https://github.com/slanglab/aae-twitter
+
 
 # Description (copied from paper draft)
 
@@ -29,8 +30,11 @@ We now discuss the filtering and analysis to create Twitter4Years, which was per
 
 This results in 227,253,198 messages (including duplicates); 226,631,796 deduplicated messages; and 7,414,332 unique authors.
 
+
 # Whitelist description
-The following describes the whitelist, with descriptions of each platform and the corresponding whitelist line number(s) in parentheses:
+
+The file `whitelist` contains the sources (Twitter client IDs) that are included.  The following describes these sources, with descriptions of each platform and their line number(s) in the `whitelist` file:
+
 1. Official Client/Browser (1-15)
     - The official Twitter client, devices include iPhone, Android, Blackberry, Windows Phone, Nokia n40, Windows, iPad, Android Tablets, and Browsers 
 2. TweetCaster (16,21,27)
@@ -47,8 +51,9 @@ The following describes the whitelist, with descriptions of each platform and th
     - A third party Twitter client. [Website Archive](https://web.archive.org/web/20220302165541/https://echofon.com/)
 8. Plume (26,30,37)
     - A third party Twitter client. [Website Archive](https://web.archive.org/web/20220307165409/https://myplume.com/)
-9. Endomondo[^1] (28)
+9. Endomondo (28)
     - A fitness platform that allows users to update their exercise status to Twitter. [Wikipedia](https://en.wikipedia.org/wiki/Endomondo)
+    - *Note:* Upon further review, this source does not strictly fit criteria for entry and should have been excluded. However, it only makes up 0.008% of the dataset, so we do not anticipate downstream analysis would be affected by this error.
 10. UberTwitter (29,35)
     - Former version of UberSocial before rebranding. [Rebranding coverage](https://www.networkworld.com/article/2200143/twitter-whacks-ubertwitter-company-so-hard-it-s-changing-app-s-name-to-ubersocial.html), [additional coverage](https://everything-pr.com/uber-twitter/)
 11. Gravity (31,38)
@@ -76,7 +81,6 @@ The following describes the whitelist, with descriptions of each platform and th
 22. Tweedle (54)
     - A third party Twitter client. [News Coverage](https://lifehacker.com/tweedle-makes-twitter-simple-stable-and-beautiful-for-1477800832)
 ​
-[^1]: Under late review, does not strictly fit criteria for entry. Analysis should not be significantly affected, as it makes up only 0.008% of the dataset.
 
 # Usage
 
